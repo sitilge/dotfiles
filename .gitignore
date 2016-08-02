@@ -1,0 +1,31 @@
+*
+
+# initial
+!.gitignore
+!README.md
+!LICENSE
+
+# bash
+!.bash_profile
+!.bashrc
+
+# config
+!.config
+.config/*
+!.config/xfce4
+
+# conky./
+!.conkyrc0
+!.conkyrc1
+
+# curl
+!.curlrc
+
+# git
+!.gitconfig
+
+# x11
+!.xinitrc
+
+# xterm
+!.Xresources
