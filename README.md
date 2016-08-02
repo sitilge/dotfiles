@@ -1,6 +1,6 @@
 # Dotfiles
 
-Dotfiles for Arch Linux
+Arch Linux dotfiles
 
 - bash
 - xfce

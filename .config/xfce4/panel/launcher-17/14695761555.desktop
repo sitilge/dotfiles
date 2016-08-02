@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PhpStorm
+Icon=/home/martins/.icons/webide.png
+Exec=/home/martins/Builds/PhpStorm-162.1121.38/bin/phpstorm.sh
+Comment=The Drive to Develop
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-phpstorm
+X-XFCE-Source=file:///home/martins/.local/share/applications/jetbrains-phpstorm.desktop
+Path=
+StartupNotify=false
