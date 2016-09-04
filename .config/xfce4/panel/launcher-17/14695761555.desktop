@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=PhpStorm
-Icon=/home/martins/.icons/webide.png
+Icon=/home/martins/.thumbnails/normal/175ad6ef565a8f8a672d6296ee1669d3.png
 Exec=/home/martins/Builds/PhpStorm-162.1121.38/bin/phpstorm.sh
 Comment=The Drive to Develop
 Categories=Development;IDE;

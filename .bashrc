@@ -20,5 +20,5 @@ alias mv='mv -v'
 alias rm='rm -v'
 alias cp='cp -v'
 
-alias ls='ls --color=auto'
+alias l='ls --color=auto'
 alias ll='ls --color=auto -lah'

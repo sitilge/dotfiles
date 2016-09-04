@@ -1,11 +1,18 @@
 #!/bin/sh
 
+# remove all xfce4 sessions
+rm -R ~/.cache/sessions
+
+# set up the xterm colors
 if [ -f ~/.Xresources ]; then 
     xrdb -merge ~/.Xresources;
 fi
 
-rm -R ~/.cache/sessions
+# set keymap for x11 only
+setxkbmap lv
 
-conky -c ~/.conkyrc0 && conky -c ~/.conkyrc1
+# initialize conky
+conky -qc ~/.conkyrc
 
+# start xfce4
 exec startxfce4

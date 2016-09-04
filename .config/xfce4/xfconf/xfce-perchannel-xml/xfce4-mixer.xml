@@ -13,6 +13,6 @@
       <value type="string" value="Internal Mic Boost"/>
     </property>
   </property>
-  <property name="window-height" type="int" value="460"/>
-  <property name="window-width" type="int" value="640"/>
+  <property name="window-height" type="int" value="703"/>
+  <property name="window-width" type="int" value="1366"/>
 </channel>
