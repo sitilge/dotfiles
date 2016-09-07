@@ -10,7 +10,7 @@
   <property name="last-location-bar" type="string" value="ThunarLocationEntry"/>
   <property name="last-show-hidden" type="bool" value="false"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_SMALL"/>
-  <property name="last-details-view-column-widths" type="string" value="50,222,82,50,788,110,132,94,214"/>
+  <property name="last-details-view-column-widths" type="string" value="50,613,82,50,300,110,132,94,230"/>
   <property name="misc-single-click" type="bool" value="false"/>
   <property name="misc-recursive-permissions" type="string" value="THUNAR_RECURSIVE_PERMISSIONS_NEVER"/>
   <property name="shortcuts-icon-size" type="string" value="THUNAR_ICON_SIZE_SMALL"/>
