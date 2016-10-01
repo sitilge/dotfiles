@@ -7,10 +7,15 @@
 
 PS1='[\u@\h \W]\$ '
 
+# history variables
 export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=100000
 export HISTFILESIZE=$HISTSIZE
 
+# include dotfiles in filename expansion
+shopt -s dotglob
+
+# aliases
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
