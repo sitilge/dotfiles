@@ -16,9 +16,9 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-alias mv='mv -v'
-alias rm='rm -v'
-alias cp='cp -v'
+alias mv="mv -v"
+alias rm="rm -v"
+alias cp="cp -v"
 
-alias l='ls --color=auto'
-alias ll='ls --color=auto -lah'
+alias l="ls --color=auto"
+alias ll="ls --color=auto -lah"
