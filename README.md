@@ -3,7 +3,6 @@
 Arch Linux dotfiles
 
 - bash
-- xfce
 - conky
 - curl
 - git

@@ -1,27 +1,32 @@
-alignment top_right
-background true
-update_interval 2.0
-total_run_times 0
-use_xft true
-own_window true
-own_window_transparent true
-own_window_type normal
-own_window_hints undecorated,below,skip_pager,skip_taskbar
-own_window_class conky
-own_window_argb_visual true
-double_buffer true
-draw_shades false
-draw_outline false
-draw_borders false
-draw_graph_borders true
-gap_x 10
-gap_y 10
-no_buffers true
-uppercase false
-cpu_avg_samples 2
-override_utf8_locale false
+conky.config = {
+	lua_load = '.conky_cpu.lua',
+	lua_load = '.conky_part.lua',
 
-TEXT
+	alignment = 'top_right',
+	background = true,
+	update_interval = 2.0,
+	total_run_times = 0,
+	use_xft = true,
+	own_window = true,
+	own_window_transparent = true,
+	own_window_type = 'normal',
+	own_window_hints = 'undecorated,below,skip_pager,skip_taskbar',
+	own_window_class = 'conky',
+	own_window_argb_visual = true,
+	double_buffer = true,
+	draw_shades = false,
+	draw_outline = false,
+	draw_borders = false,
+	draw_graph_borders = true,
+	gap_x = 10,
+	gap_y = 10,
+	no_buffers = true,
+	uppercase = false,
+	cpu_avg_samples = 2,
+	override_utf8_locale = false,
+};
+
+conky.text = [[
 ${font sans-serif:bold:size=8}${color FFCC00}\
 SYSTEM $stippled_hr
 ${font sans-serif:normal:size=8}${color FFFFCC}\
@@ -36,10 +41,7 @@ ${font sans-serif:bold:size=8}${color FFCC00}\
 CPU $stippled_hr
 ${font sans-serif:normal:size=8}${color FFFFCC}\
 ${cpugraph 25,0 -t}
-CPU1: ${cpu cpu1} % ${cpubar cpu1}
-CPU2: ${cpu cpu2} % ${cpubar cpu2}
-CPU3: ${cpu cpu3} % ${cpubar cpu3}
-CPU4: ${cpu cpu4} % ${cpubar cpu4}
+${lua_parse conky_cpu}
 
 ${font sans-serif:bold:size=8}${color FFCC00}\
 TOP CPU $stippled_hr
@@ -60,8 +62,9 @@ ${top_mem name 4} $alignr ${top_mem mem 4} %
 ${font sans-serif:bold:size=8}${color FFCC00}\
 MEM $stippled_hr
 ${font sans-serif:normal:size=8}${color FFFFCC}\
-RAM $alignr $mem / $memmax $memperc %
-SWAP $alignr $swap / $swapmax $swapperc %
+${lua_parse conky_part}
+RAM: $alignr $mem / $memmax $memperc %
+SWAP: $alignr $swap / $swapmax $swapperc %
 
 ${font sans-serif:bold:size=8}${color FFCC00}\
 IO $stippled_hr
@@ -90,3 +93,4 @@ ${font sans-serif:normal:size=8}${color FFFFCC}\
 Up: $alignr ${upspeed enp2s0f0}/s
 ${upspeedgraph enp2s0f0 20,0 -t}
 ${endif}${endif}
+]];
