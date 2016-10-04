@@ -15,6 +15,9 @@ export HISTFILESIZE=$HISTSIZE
 # include dotfiles in filename expansion
 shopt -s dotglob
 
+# update window size
+shopt -s checkwinsize
+
 # aliases
 alias ..="cd .."
 alias ...="cd ../.."
