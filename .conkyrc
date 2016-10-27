@@ -1,7 +1,4 @@
 conky.config = {
-	lua_load = '.conky_cpu.lua',
-	lua_load = '.conky_part.lua',
-
 	alignment = 'top_right',
 	background = true,
 	update_interval = 2.0,
@@ -34,14 +31,19 @@ Host: $alignr $nodename
 Arch: $alignr $machine
 Kernel: $alignr $kernel
 Uptime: $alignr $uptime
-Procs: $alignr $processes
-Running: $alignr $running_processes
 
 ${font sans-serif:bold:size=8}${color FFCC00}\
 CPU $stippled_hr
 ${font sans-serif:normal:size=8}${color FFFFCC}\
+Freq: $alignr ${freq} Mhz
+Temp CPU: $alignr ${platform coretemp.0/hwmon/hwmon0 temp 1} C
 ${cpugraph 25,0 -t}
-${lua_parse conky_cpu}
+Temp PC1: $alignr ${platform coretemp.0/hwmon/hwmon0 temp 2} C
+LC1: ${cpu cpu1} % ${cpubar cpu1}
+LC2: ${cpu cpu2} % ${cpubar cpu2}
+Temp PC2: $alignr ${platform coretemp.0/hwmon/hwmon0 temp 3} C
+LC3: ${cpu cpu3} % ${cpubar cpu3}
+LC4: ${cpu cpu4} % ${cpubar cpu4}
 
 ${font sans-serif:bold:size=8}${color FFCC00}\
 TOP CPU $stippled_hr
@@ -49,7 +51,6 @@ ${font sans-serif:normal:size=8}${color FFFFCC}\
 ${top name 1} $alignr ${top cpu 1} %
 ${top name 2} $alignr ${top cpu 2} %
 ${top name 3} $alignr ${top cpu 3} %
-${top name 4} $alignr ${top cpu 4} %
 
 ${font sans-serif:bold:size=8}${color FFCC00}\
 TOP MEM $stippled_hr
@@ -57,20 +58,19 @@ ${font sans-serif:normal:size=8}${color FFFFCC}\
 ${top_mem name 1} $alignr ${top_mem mem 1} %
 ${top_mem name 2} $alignr ${top_mem mem 2} %
 ${top_mem name 3} $alignr ${top_mem mem 3} %
-${top_mem name 4} $alignr ${top_mem mem 4} %
 
 ${font sans-serif:bold:size=8}${color FFCC00}\
 MEM $stippled_hr
 ${font sans-serif:normal:size=8}${color FFFFCC}\
-${lua_parse conky_part}
-RAM: $alignr $mem / $memmax $memperc %
-SWAP: $alignr $swap / $swapmax $swapperc %
+RAM: $alignr ${mem} / ${memmax} ${memperc} %
 
 ${font sans-serif:bold:size=8}${color FFCC00}\
 IO $stippled_hr
-${font sans-serif:normal:size=8}${color FFFFCC}Read: $alignr $diskio_read
+${font sans-serif:normal:size=8}${color FFFFCC}\
+Read: $alignr $diskio_read
 ${diskiograph_read 20,0 -t}
-${font sans-serif:normal:size=8}${color FFFFCC}Write: $alignr $diskio_write
+${font sans-serif:normal:size=8}${color FFFFCC}\
+Write: $alignr $diskio_write
 ${diskiograph_write 20,0 -t}
 ${font sans-serif:normal:size=8}${color FFFFCC}\
 / $alignr ${fs_used /} / ${fs_size /} ${fs_used_perc /} %
@@ -79,18 +79,18 @@ ${font sans-serif:normal:size=8}${color FFFFCC}\
 ${if_up wlp3s0b1}${font sans-serif:bold:size=8}${color FFCC00}\
 NET $stippled_hr
 ${font sans-serif:normal:size=8}${color FFFFCC}\
-Down: $alignr ${downspeed wlp3s0b1}/s
+Down: $alignr ${downspeedf wlp3s0b1}
 ${downspeedgraph wlp3s0b1 20,0 -t}
 ${font sans-serif:normal:size=8}${color FFFFCC}\
-Up: $alignr ${upspeed wlp3s0b1}/s
+Up: $alignr ${upspeedf wlp3s0b1}
 ${upspeedgraph wlp3s0b1 20,0 -t}
 ${else}${if_up enp2s0f0}${font sans-serif:bold:size=8}${color FFCC00}\
 NET $stippled_hr
 ${font sans-serif:normal:size=8}${color FFFFCC}\
-Down: $alignr ${downspeed enp2s0f0}/s
+Down: $alignr ${downspeedf enp2s0f0}
 ${downspeedgraph enp2s0f0 20,0 -t}
 ${font sans-serif:normal:size=8}${color FFFFCC}\
-Up: $alignr ${upspeed enp2s0f0}/s
+Up: $alignr ${upspeedf enp2s0f0}
 ${upspeedgraph enp2s0f0 20,0 -t}
 ${endif}${endif}
 ]];
