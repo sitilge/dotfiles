@@ -1,7 +1,7 @@
 conky.config = {
 	alignment = 'top_right',
 	background = true,
-	update_interval = 2.0,
+	update_interval = 1.0,
 	total_run_times = 0,
 	use_xft = true,
 	own_window = true,
@@ -36,12 +36,14 @@ ${font sans-serif:bold:size=8}${color FFCC00}\
 CPU $stippled_hr
 ${font sans-serif:normal:size=8}${color FFFFCC}\
 Freq: $alignr ${freq} Mhz
-Temp CPU: $alignr ${platform coretemp.0/hwmon/hwmon0 temp 1} C
+Temp CPU: $alignr ${platform coretemp.0/hwmon/hwmon1 temp 1} C
 ${cpugraph 25,0 -t}
-Temp PC1: $alignr ${platform coretemp.0/hwmon/hwmon0 temp 2} C
+
+Temp PC1: $alignr ${platform coretemp.0/hwmon/hwmon1 temp 2} C
 LC1: ${cpu cpu1} % ${cpubar cpu1}
 LC2: ${cpu cpu2} % ${cpubar cpu2}
-Temp PC2: $alignr ${platform coretemp.0/hwmon/hwmon0 temp 3} C
+
+Temp PC2: $alignr ${platform coretemp.0/hwmon/hwmon1 temp 3} C
 LC3: ${cpu cpu3} % ${cpubar cpu3}
 LC4: ${cpu cpu4} % ${cpubar cpu4}
 
@@ -74,23 +76,24 @@ Write: $alignr $diskio_write
 ${diskiograph_write 20,0 -t}
 ${font sans-serif:normal:size=8}${color FFFFCC}\
 / $alignr ${fs_used /} / ${fs_size /} ${fs_used_perc /} %
-/home $alignc ${fs_used /home} / ${fs_size /home} ${fs_used_perc /} %
+/boot $alignc ${fs_used /boot} / ${fs_size /boot} ${fs_used_perc /boot} %
+/home $alignc ${fs_used /home} / ${fs_size /home} ${fs_used_perc /home} %
 
-${if_up wlp3s0b1}${font sans-serif:bold:size=8}${color FFCC00}\
+${if_up wlp4s0}${font sans-serif:bold:size=8}${color FFCC00}\
 NET $stippled_hr
 ${font sans-serif:normal:size=8}${color FFFFCC}\
-Down: $alignr ${downspeedf wlp3s0b1}
-${downspeedgraph wlp3s0b1 20,0 -t}
+Down: $alignr ${downspeed wlp4s0}
+${downspeedgraph wlp4s0 20,0 -t}
 ${font sans-serif:normal:size=8}${color FFFFCC}\
-Up: $alignr ${upspeedf wlp3s0b1}
-${upspeedgraph wlp3s0b1 20,0 -t}
-${else}${if_up enp2s0f0}${font sans-serif:bold:size=8}${color FFCC00}\
+Up: $alignr ${upspeed wlp4s0}
+${upspeedgraph wlp4s0 20,0 -t}
+${else}${if_up enp0s31f6}${font sans-serif:bold:size=8}${color FFCC00}\
 NET $stippled_hr
 ${font sans-serif:normal:size=8}${color FFFFCC}\
-Down: $alignr ${downspeedf enp2s0f0}
-${downspeedgraph enp2s0f0 20,0 -t}
+Down: $alignr ${downspeed enp0s31f6}
+${downspeedgraph enp0s31f6 20,0 -t}
 ${font sans-serif:normal:size=8}${color FFFFCC}\
-Up: $alignr ${upspeedf enp2s0f0}
-${upspeedgraph enp2s0f0 20,0 -t}
+Up: $alignr ${upspeed enp0s31f6}
+${upspeedgraph enp0s31f6 20,0 -t}
 ${endif}${endif}
 ]];
