@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # remove all xfce4 sessions
 rm -R ~/.cache/sessions
