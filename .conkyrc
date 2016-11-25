@@ -1,7 +1,7 @@
 conky.config = {
 	alignment = 'top_right',
 	background = true,
-	update_interval = 1.0,
+	update_interval = 2.0,
 	total_run_times = 0,
 	use_xft = true,
 	own_window = true,
@@ -36,14 +36,9 @@ ${font sans-serif:bold:size=8}${color FFCC00}\
 CPU $stippled_hr
 ${font sans-serif:normal:size=8}${color FFFFCC}\
 Freq: $alignr ${freq} Mhz
-Temp CPU: $alignr ${platform coretemp.0/hwmon/hwmon1 temp 1} C
 ${cpugraph 25,0 -t}
-
-Temp PC1: $alignr ${platform coretemp.0/hwmon/hwmon1 temp 2} C
 LC1: ${cpu cpu1} % ${cpubar cpu1}
 LC2: ${cpu cpu2} % ${cpubar cpu2}
-
-Temp PC2: $alignr ${platform coretemp.0/hwmon/hwmon1 temp 3} C
 LC3: ${cpu cpu3} % ${cpubar cpu3}
 LC4: ${cpu cpu4} % ${cpubar cpu4}
 
