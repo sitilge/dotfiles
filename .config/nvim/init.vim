@@ -19,9 +19,6 @@ inoremap <C-U> <C-G>u<C-U>
 " Switch syntax highlighting on
 syntax on
 
-" Also switch on highlighting the last used search pattern.
-set hlsearch
-
 " I like highlighting strings inside C comments.
 let c_comment_strings=1
 
@@ -55,5 +52,19 @@ if !exists(":DiffOrig")
                  \ | wincmd p | diffthis
 endif
 
+" Colors
+
 colorscheme molokai
 let g:molokai_original = 1
+
+" Netrw
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END
