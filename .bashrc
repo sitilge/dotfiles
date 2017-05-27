@@ -1,10 +1,7 @@
-#
-# ~/.bashrc
-#
+# check if interactive
+[[ $- != *i* ]] && return
 
-# If not running interactively, don't do anything
-# [[ $- != *i* ]] && return
-
+# set the PS1
 PS1='[\u@\h \W]\$ '
 
 # history variables

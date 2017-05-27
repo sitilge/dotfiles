@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # remove all xfce4 sessions
-rm -R ~/.cache/sessions
+if [ -d ~/.cache/sessions ]; then
+    rm -R ~/.cache/sessions/*
+fi
 
 # set up the xterm colors
 if [ -f ~/.Xresources ]; then 

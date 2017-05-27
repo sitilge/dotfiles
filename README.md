@@ -1,10 +1,13 @@
 # Dotfiles
 
-Arch Linux dotfiles
+## System
+
+- arch linux
+- nvim
+- xfce4
+
+## Profiles
 
 - bash
+- nvim (plugin install script included)
 - conky
-- curl
-- git
-- x11
-- xterm  

@@ -1,70 +1,72 @@
-" An example for a vimrc file.
-"
-" To use it, copy it to
-"     for Unix:     $HOME/.config/nvim/init.vim
-"     for Windows:  %LOCALAPPDATA%\nvim\init.vim
+" Show the ruler
+set ruler
 
-set backup             " keep a backup file (restore to previous version)
-set undofile           " keep an undo file (undo changes after closing)
-set ruler              " show the cursor position all the time
-set showcmd            " display incomplete commands
+" Show line numbers
+set number
 
-" Don't use Ex mode, use Q for formatting
-noremap Q gq
+" Show unfinished command
+set showcmd
 
-" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
-inoremap <C-U> <C-G>u<C-U>
+" Highlight search results
+set hlsearch
 
-" Switch syntax highlighting on
+" Enable syntax highlighting
 syntax on
 
-" I like highlighting strings inside C comments.
-let c_comment_strings=1
+" Enable mouse interaction
+set mouse=a
 
-" Enable file type detection.
-" Use the default filetype settings, so that mail gets 'textwidth' set to 72,
-" 'cindent' is on in C files, etc.
-" Also load indent files, to automatically do language-dependent indenting.
+" Start pathogen plugin manager
+execute pathogen#infect()
+
+" Turn on filetype detection, load file plugin and file indent
 filetype plugin indent on
 
-" Put these in an autocmd group, so that we can delete them easily.
-augroup vimrcEx
-  autocmd!
+" Set the colorscheme
+set background=dark
+" Fallback for terminal mode
+let g:solarized_termcolors=256
+colorscheme solarized
 
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+" Upgrade airline
+set laststatus=2
+let g:airline_detect_paste=1
+let g:airline#extensions#tabline#enabled=1
 
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  autocmd BufReadPost *
-    \ if line("'\"") >= 1 && line("'\"") <= line("$") |
-    \   execute "normal! g`\"" |
-    \ endif
+" Set airline theme
+let g:airline_theme='solarized'
 
-augroup END
+" Open NERDTree automatically if a file is specified
+autocmd vimenter * NERDTree
 
-" Convenient command to see the difference between the current buffer and the
-" file it was loaded from, thus the changes you made.
-" Only define it when not defined already.
-if !exists(":DiffOrig")
-  command DiffOrig vert new | set buftype=nofile | read ++edit # | 0d_ | diffthis
-                 \ | wincmd p | diffthis
-endif
+" Open NERDTree automatically if no files specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-" Colors
+" Close NERDTree if it is the only window left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-colorscheme molokai
-let g:molokai_original = 1
+" Extra column for syntastic and git-gutter
+hi clear SignColumn
 
-" Netrw
+" Set some fancy sytastic symbols
+let g:syntastic_error_symbol='✘'
+let g:syntastic_warning_symbol="▲"
 
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
-augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :Vexplore
-augroup END
+" Initial easytags config
+set tags=./tags;,~/.vimtags
+let g:easytags_events=['BufReadPost', 'BufWritePost']
+let g:easytags_async=1
+let g:easytags_dynamic_files=2
+let g:easytags_resolve_links=1
+let g:easytags_suppress_ctags_warning=1
+
+" Initial tagbar config
+" Open/close tagbar with \b
+nmap <silent> <leader>b :TagbarToggle<CR>
+" Open tagbar automatically whenever possible
+autocmd BufEnter * nested :call tagbar#autoopen(0)
+
+" Initial gitgutter config
+" Refresh every 250ms
+set updatetime=250
