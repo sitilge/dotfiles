@@ -22,7 +22,7 @@ while true; do
         -i|--install)
             cd ${dir}/autoload
 
-            curl -LSso autoload/pathogen.vim https://tpo.pe/pathogen.vim
+            curl -LSso pathogen.vim https://tpo.pe/pathogen.vim
 
             cd ${dir}/bundle
 
