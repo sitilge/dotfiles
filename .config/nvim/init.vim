@@ -1,3 +1,6 @@
+" Set encoding
+set encoding=utf-8
+
 " Show the ruler
 set ruler
 
@@ -24,8 +27,6 @@ filetype plugin indent on
 
 " Set the colorscheme
 set background=dark
-" Fallback for terminal mode
-let g:solarized_termcolors=256
 colorscheme solarized
 
 " Upgrade airline
@@ -49,9 +50,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Extra column for syntastic and git-gutter
 hi clear SignColumn
 
-" Set some fancy sytastic symbols
-let g:syntastic_error_symbol='✘'
-let g:syntastic_warning_symbol="▲"
+" Always use the clipboard for all operations
+set clipboard=unnamed,unnamedplus
 
 " Initial easytags config
 set tags=./tags;,~/.vimtags
@@ -64,8 +64,6 @@ let g:easytags_suppress_ctags_warning=1
 " Initial tagbar config
 " Open/close tagbar with \b
 nmap <silent> <leader>b :TagbarToggle<CR>
-" Open tagbar automatically whenever possible
-autocmd BufEnter * nested :call tagbar#autoopen(0)
 
 " Initial gitgutter config
 " Refresh every 250ms

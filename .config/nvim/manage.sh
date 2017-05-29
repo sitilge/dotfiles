@@ -12,7 +12,12 @@ repos=(
 'https://github.com/airblade/vim-gitgutter'
 'https://github.com/xolox/vim-misc'
 'https://github.com/tpope/vim-sensible'
+'https://github.com/tpope/vim-repeat'
+'https://github.com/Valloric/YouCompleteMe'
+'https://github.com/Raimondi/delimitMate'
+'https://github.com/svermeulen/vim-easyclip'
 );
+
 
 # No config below this line
 dir=~/.config/nvim
