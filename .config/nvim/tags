@@ -1,0 +1,18 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+<leader>b	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^nmap <silent> <leader>b :TagbarToggle<CR>$/;"	m	language:Vim
+g:airline#extensions#tabline#enabled	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:airline#extensions#tabline#enabled=1$/;"	v	language:Vim
+g:airline_detect_paste	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:airline_detect_paste=1$/;"	v	language:Vim
+g:airline_theme	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:airline_theme='solarized'$/;"	v	language:Vim
+g:easytags_async	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:easytags_async=1$/;"	v	language:Vim
+g:easytags_dynamic_files	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:easytags_dynamic_files=2$/;"	v	language:Vim
+g:easytags_events	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:easytags_events=['BufReadPost', 'BufWritePost']$/;"	v	language:Vim
+g:easytags_resolve_links	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:easytags_resolve_links=1$/;"	v	language:Vim
+g:easytags_suppress_ctags_warning	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:easytags_suppress_ctags_warning=1$/;"	v	language:Vim
+g:syntastic_always_populate_loc_list	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:syntastic_always_populate_loc_list=1$/;"	v	language:Vim
+g:syntastic_auto_loc_list	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:syntastic_auto_loc_list=1$/;"	v	language:Vim
+g:syntastic_check_on_open	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:syntastic_check_on_open=1$/;"	v	language:Vim
+g:syntastic_check_on_wq	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:syntastic_check_on_wq=0$/;"	v	language:Vim
+g:syntastic_c_checkers	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:syntastic_c_checkers=['gcc', 'avrgcc']$/;"	v	language:Vim
+g:syntastic_c_include_dirs	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:syntastic_c_include_dirs=['\/usr\/avr\/include']$/;"	v	language:Vim
+g:syntastic_php_checkers	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']$/;"	v	language:Vim
+g:syntastic_sh_checkers	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:syntastic_sh_checkers=['sh']$/;"	v	language:Vim

@@ -1,4 +1,4 @@
-" Set encoding
+" Set the encoding
 set encoding=utf-8
 
 " Show the ruler
@@ -49,6 +49,21 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Extra column for syntastic and git-gutter
 hi clear SignColumn
+
+" Initial syntastic config
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
+
+let g:syntastic_sh_checkers=['sh']
+let g:syntastic_c_checkers=['gcc', 'avrgcc']
+let g:syntastic_c_include_dirs=['/usr/avr/include']
+let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
 
 " Always use the clipboard for all operations
 set clipboard=unnamed,unnamedplus
