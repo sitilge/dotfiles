@@ -1,6 +1,9 @@
 " Set the encoding
 set encoding=utf-8
 
+" Auto-reload files
+set autoread
+
 " Show the ruler
 set ruler
 
@@ -55,9 +58,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Close NERDTree if it is the only window left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" One-click open/expand
-let g:NERDTreeMouseMode=3
-
 " Extra column for syntastic and git-gutter
 hi clear SignColumn
 
@@ -71,10 +71,9 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 
-let g:syntastic_sh_checkers=['sh']
-let g:syntastic_c_checkers=['gcc', 'avrgcc']
-let g:syntastic_c_include_dirs=['/usr/avr/include']
-let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
+" Set syntastic checkers
+autocmd FileType c let b:syntastic_checkers = findfile('.syntastic_c_config') != '' ? ['gcc'] : ['']
+autocmd FileType c let b:syntastic_checkers = findfile('.syntastic_avrgcc_config') != '' ? ['avrgcc'] : ['']
 
 " Initial easytags config
 set tags=./tags;,~/.vimtags
