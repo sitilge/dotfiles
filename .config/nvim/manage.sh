@@ -13,6 +13,7 @@ repos=(
 'https://github.com/airblade/vim-gitgutter'
 'https://github.com/tpope/vim-sensible'
 'https://github.com/Raimondi/delimitMate'
+'https://github.com/ntpeters/vim-better-whitespace'
 );
 
 # No config below this line
