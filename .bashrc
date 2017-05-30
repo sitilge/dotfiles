@@ -1,6 +1,3 @@
-# check if interactive
-[[ $- != *i* ]] && return
-
 # set the PS1
 PS1='[\u@\h \W]\$ '
 
