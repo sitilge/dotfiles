@@ -25,6 +25,14 @@ execute pathogen#infect()
 " Turn on filetype detection, load file plugin and file indent
 filetype plugin indent on
 
+" Always use the clipboard for all operations
+set clipboard=unnamed,unnamedplus
+
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+
 " Set the colorscheme
 set background=dark
 colorscheme solarized
@@ -47,6 +55,9 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Close NERDTree if it is the only window left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" One-click open/expand
+let g:NERDTreeMouseMode=3
+
 " Extra column for syntastic and git-gutter
 hi clear SignColumn
 
@@ -64,9 +75,6 @@ let g:syntastic_sh_checkers=['sh']
 let g:syntastic_c_checkers=['gcc', 'avrgcc']
 let g:syntastic_c_include_dirs=['/usr/avr/include']
 let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
-
-" Always use the clipboard for all operations
-set clipboard=unnamed,unnamedplus
 
 " Initial easytags config
 set tags=./tags;,~/.vimtags

@@ -9,12 +9,10 @@ repos=(
 'https://github.com/vim-airline/vim-airline-themes'
 'https://github.com/altercation/vim-colors-solarized'
 'https://github.com/xolox/vim-easytags'
-'https://github.com/airblade/vim-gitgutter'
 'https://github.com/xolox/vim-misc'
+'https://github.com/airblade/vim-gitgutter'
 'https://github.com/tpope/vim-sensible'
-'https://github.com/tpope/vim-repeat'
 'https://github.com/Raimondi/delimitMate'
-'https://github.com/svermeulen/vim-easyclip'
 );
 
 # No config below this line
