@@ -31,9 +31,9 @@ filetype plugin indent on
 " Always use the clipboard for all operations
 set clipboard=unnamed,unnamedplus
 
-" show existing tab with 4 spaces width
+" Show existing tab with 4 spaces width
 set tabstop=4
-" when indenting with '>', use 4 spaces width
+" When indenting with '>', use 4 spaces width
 set shiftwidth=4
 
 " Set the colorscheme
@@ -43,7 +43,6 @@ colorscheme solarized
 " Upgrade airline
 set laststatus=2
 let g:airline_detect_paste=1
-let g:airline#extensions#tabline#enabled=1
 
 " Set airline theme
 let g:airline_theme='solarized'
@@ -57,6 +56,9 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Close NERDTree if it is the only window left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Auto-open on console vim startup
+let g:nerdtree_tabs_open_on_console_startup=1
 
 " Mapping alt+key for faster navigation
 nmap <silent> <A-Up> :wincmd k<CR>

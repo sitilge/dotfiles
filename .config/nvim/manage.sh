@@ -3,6 +3,7 @@
 # The plugin repos
 repos=(
 'https://github.com/scrooloose/nerdtree'
+'https://github.com/jistr/vim-nerdtree-tabs.git'
 'https://github.com/vim-syntastic/syntastic'
 'https://github.com/majutsushi/tagbar'
 'https://github.com/vim-airline/vim-airline'
