@@ -15,42 +15,43 @@ repos=(
 'https://github.com/tpope/vim-sensible'
 'https://github.com/Raimondi/delimitMate'
 'https://github.com/ntpeters/vim-better-whitespace'
+'https://github.com/roman/golden-ratio'
 );
 
 # No config below this line
 dir=~/.config/nvim
 
 while true; do
-    case "$1" in
-        -i|--install)
-            cd ${dir}/autoload
+	case "$1" in
+		-i|--install)
+			cd ${dir}/autoload
 
-            curl -LSso pathogen.vim https://tpo.pe/pathogen.vim
+			curl -LSso pathogen.vim https://tpo.pe/pathogen.vim
 
-            cd ${dir}/bundle
+			cd ${dir}/bundle
 
-            for repo in "${repos[@]}"
-            do
-                git clone --depth=1 ${repo}
-            done
+			for repo in "${repos[@]}"
+			do
+				git clone --depth=1 ${repo}
+			done
 
-            exit
-            ;;
-        -u|--update)
-            for repo in "${repos[@]}"
-            do
-                echo "${repo} => `git pull`"
-            done
+			exit
+			;;
+		-u|--update)
+			for repo in "${repos[@]}"
+			do
+				echo "${repo} => `git pull`"
+			done
 
-            exit
-            ;;
-        *)
-            echo "Usage: manage.sh option"
-            echo "Options:"
-            echo "-i, --install    Install the pathogen and clone the repos"
-            echo "-u, --update     Update by pulling the repos"
+			exit
+			;;
+		*)
+			echo "Usage: manage.sh option"
+			echo "Options:"
+			echo "-i, --install	Install the pathogen and clone the repos"
+			echo "-u, --update	 Update by pulling the repos"
 
-            exit
-            ;;
-    esac
+			exit
+			;;
+	esac
 done
