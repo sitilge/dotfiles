@@ -43,6 +43,7 @@ colorscheme solarized
 " Upgrade airline
 set laststatus=2
 let g:airline_detect_paste=1
+let g:airline_powerline_fonts=1
 
 " Set airline theme
 let g:airline_theme='solarized'
@@ -84,7 +85,7 @@ autocmd FileType c let b:syntastic_checkers = findfile('.syntastic_c_config') !=
 autocmd FileType c let b:syntastic_checkers = findfile('.syntastic_avrgcc_config') != '' ? ['avrgcc'] : ['']
 
 " Initial easytags config
-set tags=./tags;,~/.vimtags
+set tags=~/.vimtags
 let g:easytags_events=['BufReadPost', 'BufWritePost']
 let g:easytags_async=1
 let g:easytags_dynamic_files=2
@@ -98,3 +99,6 @@ nmap <silent> <leader>b :TagbarToggle<CR>
 " Initial gitgutter config
 " Refresh every 250ms
 set updatetime=250
+
+" Map nvim terminal escape key
+:tnoremap <Esc> <C-\><C-n>
