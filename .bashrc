@@ -21,6 +21,7 @@ alias .....="cd ../../../.."
 alias mv="mv -v"
 alias rm="rm -v"
 alias cp="cp -v"
+alias mkdir="mkdir -p"
 
 alias l="ls --color=auto"
 alias ll="ls --color=auto -lah"
