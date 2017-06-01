@@ -81,8 +81,13 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 
 " Set syntastic checkers
-autocmd FileType c let b:syntastic_checkers = findfile('.syntastic_c_config') != '' ? ['gcc'] : ['']
-autocmd FileType c let b:syntastic_checkers = findfile('.syntastic_avrgcc_config') != '' ? ['avrgcc'] : ['']
+function! FindConfig(prefix, what, where)
+    let cfg = findfile(a:what, escape(a:where, ' ') . ';')
+    return cfg !=# '' ? ' ' . a:prefix . ' ' . shellescape(cfg) : ''
+endfunction
+
+autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_c_gcc_config', expand('<afile>:p:h', 1)) != '' ? ['gcc'] : ['']
+autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_c_avrgcc_config', expand('<afile>:p:h', 1)) != '' ? ['avrgcc'] : ['']
 
 " Initial easytags config
 set tags=~/.vimtags
@@ -102,3 +107,6 @@ set updatetime=250
 
 " Map nvim terminal escape key
 :tnoremap <Esc> <C-\><C-n>
+
+" Allow saving as root when opened as another user
+cmap w!! w !sudo tee > /dev/null %

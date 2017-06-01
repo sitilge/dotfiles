@@ -15,7 +15,6 @@ repos=(
 'https://github.com/tpope/vim-sensible'
 'https://github.com/Raimondi/delimitMate'
 'https://github.com/ntpeters/vim-better-whitespace'
-'https://github.com/roman/golden-ratio'
 );
 
 # No config below this line
