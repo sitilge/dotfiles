@@ -86,8 +86,8 @@ function! FindConfig(prefix, what, where)
     return cfg !=# '' ? ' ' . a:prefix . ' ' . shellescape(cfg) : ''
 endfunction
 
-autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_c_gcc_config', expand('<afile>:p:h', 1)) != '' ? ['gcc'] : ['']
-autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_c_avrgcc_config', expand('<afile>:p:h', 1)) != '' ? ['avrgcc'] : ['']
+autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_c_config', expand('<afile>:p:h', 1)) != '' ? ['gcc'] : ['']
+autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_avrgcc_config', expand('<afile>:p:h', 1)) != '' ? ['avrgcc'] : ['']
 
 " Initial easytags config
 set tags=~/.vimtags
