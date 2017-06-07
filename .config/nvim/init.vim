@@ -102,8 +102,5 @@ nmap <silent> <leader>b :TagbarToggle<CR>
 " Refresh every 250ms
 set updatetime=250
 
-" Map nvim terminal escape key
-:tnoremap <Esc> <C-\><C-n>
-
 " Allow saving as root when opened as another user
 cmap w!! w !sudo tee > /dev/null %
