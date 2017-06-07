@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/bin/bash 
 # The plugin repos
 repos=(
 'https://github.com/scrooloose/nerdtree'
@@ -15,7 +14,8 @@ repos=(
 'https://github.com/airblade/vim-gitgutter'
 'https://github.com/tpope/vim-sensible'
 'https://github.com/Raimondi/delimitMate'
-'https://github.com/ntpeters/vim-better-whitespace'
+'https://github.com/ntpeters/vim-better-whitespace',
+'https://github.com/wikitopian/hardmode'
 );
 
 # No config below this line

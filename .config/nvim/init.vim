@@ -102,5 +102,8 @@ nmap <silent> <leader>b :TagbarToggle<CR>
 " Refresh every 250ms
 set updatetime=250
 
-" Force saving files that require root permission 
+" Force saving files that require root permission
 cnoremap w!! w !sudo tee > /dev/null %
+
+" Let the hard times roll
+autocmd VimEnter,BufNewFile,BufReadPost * if !strlen(&buftype) | silent! call HardMode() | endif
