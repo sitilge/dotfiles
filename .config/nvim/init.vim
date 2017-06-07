@@ -101,3 +101,6 @@ nmap <silent> <leader>b :TagbarToggle<CR>
 " Initial gitgutter config
 " Refresh every 250ms
 set updatetime=250
+
+" Force saving files that require root permission 
+cnoremap w!! w !sudo tee > /dev/null %
