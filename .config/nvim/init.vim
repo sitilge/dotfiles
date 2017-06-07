@@ -19,9 +19,6 @@ set hlsearch
 " Enable syntax highlighting
 syntax on
 
-" Enable mouse interaction
-set mouse=a
-
 " Start pathogen plugin manager
 execute pathogen#infect()
 
@@ -62,10 +59,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:nerdtree_tabs_open_on_console_startup=1
 
 " Mapping alt+key for faster navigation
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
+nmap <silent> <A-k> :wincmd k<CR>
+nmap <silent> <A-j> :wincmd j<CR>
+nmap <silent> <A-h> :wincmd h<CR>
+nmap <silent> <A-l> :wincmd l<CR>
 
 " Extra column for syntastic and git-gutter
 hi clear SignColumn
