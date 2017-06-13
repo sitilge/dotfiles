@@ -59,10 +59,13 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:nerdtree_tabs_open_on_console_startup=1
 
 " Mapping alt+key for faster navigation
-nmap <silent> <A-k> :wincmd k<CR>
-nmap <silent> <A-j> :wincmd j<CR>
-nmap <silent> <A-h> :wincmd h<CR>
-nmap <silent> <A-l> :wincmd l<CR>
+nmap <silent> <leader>k :wincmd k<CR>
+nmap <silent> <leader>j :wincmd j<CR>
+nmap <silent> <leader>h :wincmd h<CR>
+nmap <silent> <leader>l :wincmd l<CR>
+nmap <silent> <leader>; gT
+nmap <silent> <leader>'' gt
+nmap <silent> <leader>b :TagbarToggle<CR>
 
 " Extra column for syntastic and git-gutter
 hi clear SignColumn
@@ -93,10 +96,6 @@ let g:easytags_async=1
 let g:easytags_dynamic_files=2
 let g:easytags_resolve_links=1
 let g:easytags_suppress_ctags_warning=1
-
-" Initial tagbar config
-" Open/close tagbar with \b
-nmap <silent> <leader>b :TagbarToggle<CR>
 
 " Initial gitgutter config
 " Refresh every 250ms

@@ -1,4 +1,5 @@
-#!/bin/bash 
+#!/bin/bash
+
 # The plugin repos
 repos=(
 'https://github.com/scrooloose/nerdtree'
