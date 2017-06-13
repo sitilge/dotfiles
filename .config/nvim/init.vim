@@ -31,23 +31,17 @@ set tabstop=4
 " When indenting with '>', use 4 spaces width
 set shiftwidth=4
 
-" Override the default leader
-let mapleader=","
-
 " Set the background
 set background=dark
 
-" Set the colorscheme
-colorscheme solarized
-
 " Enable faster navigation
-nmap <silent> <leader>k :wincmd k<CR>
-nmap <silent> <leader>j :wincmd j<CR>
-nmap <silent> <leader>h :wincmd h<CR>
-nmap <silent> <leader>l :wincmd l<CR>
-nmap <silent> <leader>; gT
-nmap <silent> <leader>'' gt
-nmap <silent> <leader>b :TagbarToggle<CR>
+nmap <silent> <A-k> :wincmd k<CR>
+nmap <silent> <A-j> :wincmd j<CR>
+nmap <silent> <A-h> :wincmd h<CR>
+nmap <silent> <A-l> :wincmd l<CR>
+nmap <silent> <A-;> gT
+nmap <silent> <A-'> gt
+nmap <silent> <A-b> :TagbarToggle<CR>
 
 " Disable arrow keys
 map <up> <nop>
@@ -60,6 +54,12 @@ cnoremap w!! w !sudo tee > /dev/null %
 
 " Start pathogen plugin manager
 execute pathogen#infect()
+call pathogen#helptags()
+
+" Set the colorscheme
+colorscheme solarized
+
+colorscheme solarized
 
 " Upgrade airline
 set laststatus=2
