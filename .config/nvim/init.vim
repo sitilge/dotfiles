@@ -19,9 +19,6 @@ set hlsearch
 " Enable syntax highlighting
 syntax on
 
-" Start pathogen plugin manager
-execute pathogen#infect()
-
 " Turn on filetype detection, load file plugin and file indent
 filetype plugin indent on
 
@@ -30,12 +27,39 @@ set clipboard=unnamed,unnamedplus
 
 " Show existing tab with 4 spaces width
 set tabstop=4
+
 " When indenting with '>', use 4 spaces width
 set shiftwidth=4
 
-" Set the colorscheme
+" Override the default leader
+let mapleader=","
+
+" Set the background
 set background=dark
+
+" Set the colorscheme
 colorscheme solarized
+
+" Enable faster navigation
+nmap <silent> <leader>k :wincmd k<CR>
+nmap <silent> <leader>j :wincmd j<CR>
+nmap <silent> <leader>h :wincmd h<CR>
+nmap <silent> <leader>l :wincmd l<CR>
+nmap <silent> <leader>; gT
+nmap <silent> <leader>'' gt
+nmap <silent> <leader>b :TagbarToggle<CR>
+
+" Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" Force saving files that require root permission
+cnoremap w!! w !sudo tee > /dev/null %
+
+" Start pathogen plugin manager
+execute pathogen#infect()
 
 " Upgrade airline
 set laststatus=2
@@ -57,15 +81,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Auto-open on console vim startup
 let g:nerdtree_tabs_open_on_console_startup=1
-
-" Mapping alt+key for faster navigation
-nmap <silent> <leader>k :wincmd k<CR>
-nmap <silent> <leader>j :wincmd j<CR>
-nmap <silent> <leader>h :wincmd h<CR>
-nmap <silent> <leader>l :wincmd l<CR>
-nmap <silent> <leader>; gT
-nmap <silent> <leader>'' gt
-nmap <silent> <leader>b :TagbarToggle<CR>
 
 " Extra column for syntastic and git-gutter
 hi clear SignColumn
@@ -100,9 +115,6 @@ let g:easytags_suppress_ctags_warning=1
 " Initial gitgutter config
 " Refresh every 250ms
 set updatetime=250
-
-" Force saving files that require root permission
-cnoremap w!! w !sudo tee > /dev/null %
 
 " Let the hard times roll
 autocmd VimEnter,BufNewFile,BufReadPost * if !strlen(&buftype) | silent! call HardMode() | endif
