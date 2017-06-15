@@ -17,6 +17,7 @@ repos=(
 'https://github.com/Raimondi/delimitMate'
 'https://github.com/ntpeters/vim-better-whitespace'
 'https://github.com/wikitopian/hardmode'
+'https://github.com/mhinz/vim-startify'
 );
 
 # No config below this line
