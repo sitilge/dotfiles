@@ -83,7 +83,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:nerdtree_tabs_open_on_console_startup=1
 
 " Save recent files for startify
-set viminfo='100,n$HOME/.config/nvim/files/info'
+set viminfo='100,n$HOME/.config/nvim/files/info
 
 " Make NERDTree play nice with startify
 let NERDTreeHijackNetrw=0
