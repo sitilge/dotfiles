@@ -119,6 +119,9 @@ autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_avrgc
 " Enable deoplete on startup
 let g:deoplete#enable_at_startup = 1
 
+" Deoplete tab-complete
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
 " Initial easytags config
 set tags=~/.vimtags
 let g:easytags_events=['BufReadPost', 'BufWritePost']
