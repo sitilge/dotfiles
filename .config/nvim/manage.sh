@@ -18,6 +18,7 @@ repos=(
 'https://github.com/ntpeters/vim-better-whitespace'
 'https://github.com/wikitopian/hardmode'
 'https://github.com/ryanoasis/vim-devicons'
+'https://github.com/Shougo/deoplete.nvim'
 );
 
 # No config below this line

@@ -104,6 +104,9 @@ endfunction
 autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_c_config', expand('<afile>:p:h', 1)) != '' ? ['gcc'] : ['']
 autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_avrgcc_config', expand('<afile>:p:h', 1)) != '' ? ['avrgcc'] : ['']
 
+" Enable deoplete on startup
+let g:deoplete#enable_at_startup = 1
+
 " Initial easytags config
 set tags=~/.vimtags
 let g:easytags_events=['BufReadPost', 'BufWritePost']
