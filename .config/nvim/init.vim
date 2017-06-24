@@ -43,11 +43,23 @@ nmap <silent> <A-;> gT
 nmap <silent> <A-'> gt
 nmap <silent> <A-b> :TagbarToggle<CR>
 
-" Disable arrow keys
+" Disable Arrow keys in Escape mode
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+
+" Disable Arrow keys in Insert mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+" Disable Arrow keys in Visual mode
+vmap <up> <nop>
+vmap <down> <nop>
+vmap <left> <nop>
+vmap <right> <nop>
 
 " Force saving files that require root permission
 cnoremap w!! w !sudo tee > /dev/null %
