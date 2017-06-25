@@ -41,7 +41,6 @@ nmap <silent> <A-h> :wincmd h<CR>
 nmap <silent> <A-l> :wincmd l<CR>
 nmap <silent> <A-;> gT
 nmap <silent> <A-'> gt
-nmap <silent> <A-b> :TagbarToggle<CR>
 
 " Disable Arrow keys in Escape mode
 map <up> <nop>
@@ -121,14 +120,6 @@ let g:deoplete#enable_at_startup = 1
 
 " Deoplete tab-complete
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
-" Initial easytags config
-set tags=~/.vimtags
-let g:easytags_events=['BufReadPost', 'BufWritePost']
-let g:easytags_async=1
-let g:easytags_dynamic_files=2
-let g:easytags_resolve_links=1
-let g:easytags_suppress_ctags_warning=1
 
 " Initial gitgutter config
 " Refresh every 250ms
