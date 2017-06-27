@@ -70,6 +70,9 @@ call pathogen#helptags()
 " Set the colorscheme
 colorscheme solarized
 
+" Visually hide the annoying tilde signs
+hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
+
 " Upgrade airline
 set laststatus=2
 let g:airline_detect_paste=1
