@@ -70,8 +70,6 @@ call pathogen#helptags()
 " Set the colorscheme
 colorscheme solarized
 
-colorscheme solarized
-
 " Upgrade airline
 set laststatus=2
 let g:airline_detect_paste=1

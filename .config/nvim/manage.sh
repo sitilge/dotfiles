@@ -5,6 +5,7 @@ repos=(
 'https://github.com/scrooloose/nerdtree'
 'https://github.com/scrooloose/nerdcommenter'
 'https://github.com/jistr/vim-nerdtree-tabs.git'
+'https://github.com/xuyuanp/nerdtree-git-plugin'
 'https://github.com/vim-syntastic/syntastic'
 'https://github.com/vim-airline/vim-airline'
 'https://github.com/vim-airline/vim-airline-themes'
