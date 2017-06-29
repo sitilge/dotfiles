@@ -17,7 +17,6 @@ repos=(
 'https://github.com/wikitopian/hardmode'
 'https://github.com/ryanoasis/vim-devicons'
 'https://github.com/Shougo/deoplete.nvim'
-'https://github.com/reedes/vim-wordy'
 );
 
 # No config below this line
