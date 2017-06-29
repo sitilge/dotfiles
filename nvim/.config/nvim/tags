@@ -1,0 +1,31 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+<A-'>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^nmap <silent> <A-'> gt$/;"	m	language:Vim
+<A-;>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^nmap <silent> <A-;> gT$/;"	m	language:Vim
+<A-h>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^nmap <silent> <A-h> :wincmd h<CR>$/;"	m	language:Vim
+<A-j>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^nmap <silent> <A-j> :wincmd j<CR>$/;"	m	language:Vim
+<A-k>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^nmap <silent> <A-k> :wincmd k<CR>$/;"	m	language:Vim
+<A-l>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^nmap <silent> <A-l> :wincmd l<CR>$/;"	m	language:Vim
+<down>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^imap <down> <nop>$/;"	m	language:Vim
+<down>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^map <down> <nop>$/;"	m	language:Vim
+<down>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^vmap <down> <nop>$/;"	m	language:Vim
+<left>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^imap <left> <nop>$/;"	m	language:Vim
+<left>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^map <left> <nop>$/;"	m	language:Vim
+<left>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^vmap <left> <nop>$/;"	m	language:Vim
+<right>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^imap <right> <nop>$/;"	m	language:Vim
+<right>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^map <right> <nop>$/;"	m	language:Vim
+<right>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^vmap <right> <nop>$/;"	m	language:Vim
+<tab>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^inoremap <expr><tab> pumvisible() ? "\\<c-n>" : "\\<tab>"$/;"	m	language:Vim
+<up>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^imap <up> <nop>$/;"	m	language:Vim
+<up>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^map <up> <nop>$/;"	m	language:Vim
+<up>	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^vmap <up> <nop>$/;"	m	language:Vim
+FindConfig	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^function! FindConfig(prefix, what, where)$/;"	f	language:Vim
+g:airline_detect_paste	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:airline_detect_paste=1$/;"	v	language:Vim
+g:airline_powerline_fonts	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:airline_powerline_fonts=1$/;"	v	language:Vim
+g:airline_theme	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:airline_theme='solarized'$/;"	v	language:Vim
+g:deoplete#enable_at_startup	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:deoplete#enable_at_startup = 1$/;"	v	language:Vim
+g:nerdtree_tabs_open_on_console_startup	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:nerdtree_tabs_open_on_console_startup=1$/;"	v	language:Vim
+g:syntastic_always_populate_loc_list	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:syntastic_always_populate_loc_list=1$/;"	v	language:Vim
+g:syntastic_auto_loc_list	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:syntastic_auto_loc_list=1$/;"	v	language:Vim
+g:syntastic_check_on_open	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:syntastic_check_on_open=1$/;"	v	language:Vim
+g:syntastic_check_on_wq	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^let g:syntastic_check_on_wq=0$/;"	v	language:Vim
+w!!	/home/martins/Projects/dotfiles/.config/nvim/init.vim	/^cnoremap w!! w !sudo tee > \/dev\/null %$/;"	m	language:Vim

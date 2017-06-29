@@ -125,3 +125,12 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 " Initial gitgutter config
 " Refresh every 250ms
 set updatetime=250
+
+" Run formater on save
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * Neoformat
+augroup END
+
+" Strip whitespace on save
+autocmd BufEnter * EnableStripWhitespaceOnSave
