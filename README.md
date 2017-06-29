@@ -10,8 +10,8 @@ Arch linux dotfiles for
 
 # Install
 
-GNU Stow is the preferred method. Assume that the project resides under `~/Projects/dotfiles` then to install nvim run
+GNU Stow is the preferred method. Assume that the project resides under `~/Projects/dotfiles` then to install `nvim` run
 
 ````
-cd ~/Projects/dotfiles && stow nvim
+cd ~/Projects/dotfiles && stow -t ~ nvim 
 ````
