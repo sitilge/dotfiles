@@ -117,7 +117,7 @@ autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_c_con
 autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_avrgcc_config', expand('<afile>:p:h', 1)) != '' ? ['avrgcc'] : ['']
 
 " Enable deoplete on startup
-let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup=1
 
 " Deoplete tab-complete
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
@@ -128,3 +128,8 @@ set updatetime=250
 
 " Strip whitespace on save
 autocmd BufEnter * EnableStripWhitespaceOnSave
+
+" Enable autosave
+let g:auto_save=1
+let g:auto_save_silent=1
+let g:auto_save_write_all_buffers=1

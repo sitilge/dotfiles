@@ -17,6 +17,7 @@ repos=(
 'https://github.com/wikitopian/hardmode'
 'https://github.com/ryanoasis/vim-devicons'
 'https://github.com/Shougo/deoplete.nvim'
+'https://github.com/907th/vim-auto-save'
 );
 
 # No config below this line
