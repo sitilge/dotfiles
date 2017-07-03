@@ -1,6 +1,10 @@
 # set the PS1
 PS1='[\u@\h \W]\$ '
 
+# set both the editor and visual env variables
+export EDITOR=nvim
+export VISUAL=nvim
+
 # history variables
 export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=100000
@@ -13,6 +17,8 @@ shopt -s dotglob
 shopt -s checkwinsize
 
 # aliases
+alias e="nvim"
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
