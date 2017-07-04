@@ -1,13 +1,8 @@
 #!/bin/bash
 
-# remove all xfce4 sessions
+# remove all sessions
 if [ -d ~/.cache/sessions ]; then
     rm -R ~/.cache/sessions/*
-fi
-
-# set up the xterm colors
-if [ -f ~/.Xresources ]; then 
-    xrdb -merge ~/.Xresources;
 fi
 
 # set keymap for x11 only
