@@ -16,6 +16,9 @@ shopt -s dotglob
 # update window size
 shopt -s checkwinsize
 
+# complete files and commands
+complete -cf sudo
+
 # aliases
 alias e="nvim"
 
