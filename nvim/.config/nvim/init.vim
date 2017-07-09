@@ -1,12 +1,3 @@
-" Set the encoding
-set encoding=utf-8
-
-" Auto-reload files
-set autoread
-
-" Show the ruler
-set ruler
-
 " Show line numbers
 set number
 
@@ -15,12 +6,6 @@ set showcmd
 
 " Highlight search results
 set hlsearch
-
-" Enable syntax highlighting
-syntax on
-
-" Turn on filetype detection, load file plugin and file indent
-filetype plugin indent on
 
 " Always use the clipboard for all operations
 set clipboard=unnamed,unnamedplus
