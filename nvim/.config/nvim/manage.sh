@@ -18,6 +18,7 @@ repos=(
 'https://github.com/ryanoasis/vim-devicons'
 'https://github.com/Shougo/deoplete.nvim'
 'https://github.com/907th/vim-auto-save'
+'https://github.com/Chiel92/vim-autoformat'
 );
 
 # No config below this line
