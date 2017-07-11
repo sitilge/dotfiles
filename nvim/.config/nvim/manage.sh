@@ -2,57 +2,88 @@
 
 # The plugin repos
 repos=(
-'https://github.com/scrooloose/nerdtree'
-'https://github.com/scrooloose/nerdcommenter'
+'https://github.com/scrooloose/nerdtree.git'
+'https://github.com/scrooloose/nerdcommenter.git'
 'https://github.com/jistr/vim-nerdtree-tabs.git'
-'https://github.com/xuyuanp/nerdtree-git-plugin'
-'https://github.com/vim-syntastic/syntastic'
-'https://github.com/vim-airline/vim-airline'
-'https://github.com/vim-airline/vim-airline-themes'
-'https://github.com/altercation/vim-colors-solarized'
-'https://github.com/airblade/vim-gitgutter'
-'https://github.com/tpope/vim-sensible'
-'https://github.com/Raimondi/delimitMate'
-'https://github.com/ntpeters/vim-better-whitespace'
-'https://github.com/wikitopian/hardmode'
-'https://github.com/ryanoasis/vim-devicons'
-'https://github.com/Shougo/deoplete.nvim'
-'https://github.com/907th/vim-auto-save'
-'https://github.com/Chiel92/vim-autoformat'
-);
+'https://github.com/xuyuanp/nerdtree-git-plugin.git'
+'https://github.com/vim-syntastic/syntastic.git'
+'https://github.com/vim-airline/vim-airline.git'
+'https://github.com/vim-airline/vim-airline-themes.git'
+'https://github.com/altercation/vim-colors-solarized.git'
+'https://github.com/airblade/vim-gitgutter.git'
+'https://github.com/tpope/vim-sensible.git'
+'https://github.com/Raimondi/delimitMate.git'
+'https://github.com/ntpeters/vim-better-whitespace.git'
+'https://github.com/wikitopian/hardmode.git'
+'https://github.com/ryanoasis/vim-devicons.git'
+'https://github.com/Shougo/deoplete.nvim.git'
+'https://github.com/vim-scripts/vim-auto-save.git'
+'https://github.com/sbdchd/neoformat'
+)
 
 # No config below this line
 dir=~/.config/nvim
 
-while true; do
+while true
+do
 	case "$1" in
-		-i|--install)
-			cd ${dir}/autoload
+		--init)
+			cd "${dir}"/autoload
 
 			curl -LSso pathogen.vim https://tpo.pe/pathogen.vim
 
-			cd ${dir}/bundle
+			exit
+			;;
+		--install)
+			cd "${dir}"/bundle
 
 			for repo in "${repos[@]}"
 			do
-				git clone --depth=1 ${repo}
+				git clone --depth=1 "${repo}"
 			done
 
 			exit
 			;;
-		-u|--update)
+		--update)
+			cd "${dir}"/bundle
+
 			for repo in "${repos[@]}"
 			do
-				echo "${repo} => `git pull`"
+				git pull
+			done
+
+			exit
+			;;
+		--purge)
+			cd "${dir}"/bundle
+
+			rd=()
+
+			for repo in "${repos[@]}"
+			do
+				d=`echo "${repo}" | rev | cut -d '/' -f 1 | rev`
+				rd+=("${d%.git}")
+			done
+
+			for d in *
+			do
+				if [[ "${rd[*]}" != *"${d}"* ]]
+				then
+					rm -R "${d}"
+				fi
 			done
 
 			exit
 			;;
 		*)
-			echo "Usage: manage.sh option"
+			echo ""
+			echo "Usage: manage.sh OPTION"
+			echo ""
 			echo "Options:"
-			echo "-i, --install	Install the pathogen and clone the repos"
-			echo "-u, --update	 Update by pulling the repos"
+			echo "--init        Initialize the plugin manager"
+			echo "--install     Clone the repos"
+			echo "--update      Pull the repos"
+			echo "--purge       Purge the repos"
 
 			exit
 			;;
