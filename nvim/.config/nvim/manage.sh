@@ -21,8 +21,9 @@ repos=(
 'https://github.com/sbdchd/neoformat'
 )
 
-# No config below this line
 dir=~/.config/nvim
+
+# No config below this line
 
 while true
 do
