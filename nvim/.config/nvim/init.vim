@@ -1,3 +1,46 @@
+" Turn on filetype plugins
+filetype plugin indent on
+
+" Enable syntax highlight
+syntax enable
+
+" Set autoindent
+set autoindent
+
+" Always show window status
+set laststatus=2
+
+" Show line and column number
+set ruler
+
+" Show the nice autocomplete menu
+set wildmenu
+
+" Set enconding to utf-8
+set encoding=utf-8
+
+" Reload unchanged files automatically
+set autoread
+
+" Highlight line under cursor
+set cursorline
+
+" Fix 8 lines above the cursor
+set scrolloff=8
+
+" Set full autocompletion
+set wildmode=longest,full
+
+" Don't ignore case
+set smartcase
+
+" Auto-center on search result
+noremap n nzz
+noremap N Nzz
+
+" Set window title
+set title
+
 " Show line numbers
 set number
 
@@ -59,7 +102,6 @@ colorscheme solarized
 hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
 
 " Upgrade airline
-set laststatus=2
 let g:airline_detect_paste=1
 let g:airline_powerline_fonts=1
 

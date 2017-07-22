@@ -11,7 +11,6 @@ repos=(
 'https://github.com/vim-airline/vim-airline-themes.git'
 'https://github.com/altercation/vim-colors-solarized.git'
 'https://github.com/airblade/vim-gitgutter.git'
-'https://github.com/tpope/vim-sensible.git'
 'https://github.com/Raimondi/delimitMate.git'
 'https://github.com/ntpeters/vim-better-whitespace.git'
 'https://github.com/wikitopian/hardmode.git'
