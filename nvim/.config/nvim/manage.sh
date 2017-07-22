@@ -25,14 +25,14 @@ dir=~/.config/nvim
 # No config below this line
 
 hasElement() {
-    local element
+	local element
 
-    for element in "${@:2}"
-    do
-        [[ "${element}" == "$1" ]] && return 0
-    done
+	for element in "${@:2}"
+	do
+		[[ "${element}" == "$1" ]] && return 0
+	done
 
-    return 1
+	return 1
 }
 
 while true
@@ -78,12 +78,12 @@ do
 
 			for d in *
 			do
-			    hasElement "${d}" "${rd[@]}"
-                if [[ $? -eq "1" ]]
-                then
-                    rm -rf "${d}"
-                fi
-            done
+				hasElement "${d}" "${rd[@]}"
+				if [[ $? -eq "1" ]]
+				then
+					rm -rf "${d}"
+				fi
+			done
 
 			exit
 			;;
