@@ -18,6 +18,7 @@ repos=(
 'https://github.com/Shougo/deoplete.nvim.git'
 'https://github.com/vim-scripts/vim-auto-save.git'
 'https://github.com/sbdchd/neoformat'
+'https://github.com/brooth/far.vim'
 )
 
 dir=~/.config/nvim
