@@ -73,6 +73,9 @@ nmap <silent> <A-l> :wincmd l<CR>
 nmap <silent> <A-;> gT
 nmap <silent> <A-'> gt
 
+" Enable mouse for navigation (don'y yell at me)
+set mouse=a
+
 " Disable Arrow keys in Escape mode
 map <up> <nop>
 map <down> <nop>
