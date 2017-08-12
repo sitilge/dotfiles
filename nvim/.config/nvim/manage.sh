@@ -13,12 +13,12 @@ repos=(
 'https://github.com/airblade/vim-gitgutter.git'
 'https://github.com/Raimondi/delimitMate.git'
 'https://github.com/ntpeters/vim-better-whitespace.git'
-'https://github.com/wikitopian/hardmode.git'
 'https://github.com/ryanoasis/vim-devicons.git'
 'https://github.com/Shougo/deoplete.nvim.git'
 'https://github.com/vim-scripts/vim-auto-save.git'
 'https://github.com/sbdchd/neoformat'
 'https://github.com/brooth/far.vim'
+'https://github.com/tpope/vim-fugitive.git'
 )
 
 dir=~/.config/nvim
