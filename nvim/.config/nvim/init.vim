@@ -25,6 +25,9 @@ set autoread
 " Highlight line under cursor
 set cursorline
 
+" Enable lazyredraw
+set lazyredraw
+
 " Fix 8 lines above the cursor
 set scrolloff=8
 
