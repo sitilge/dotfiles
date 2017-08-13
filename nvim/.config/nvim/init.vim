@@ -114,18 +114,9 @@ let g:airline_powerline_fonts=1
 " Set airline theme
 let g:airline_theme='solarized'
 
-" Open NERDTree automatically if a file is specified
-autocmd vimenter * NERDTree
-
-" Open NERDTree automatically if no files specified
+" Open NERDTree automatically if dir selected
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-" Close NERDTree if it is the only window left open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" Auto-open on console vim startup
-let g:nerdtree_tabs_open_on_console_startup=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 " Extra column for syntastic and git-gutter
 hi clear SignColumn
@@ -169,7 +160,7 @@ let g:auto_updatetime=1000
 let g:neoformat_basic_format_align=1
 let g:neoformat_basic_format_trim=1
 
-" Run formater on save
+" Run Neoformat on save
 augroup fmt
 	autocmd!
 	autocmd BufWritePre * undojoin | Neoformat
