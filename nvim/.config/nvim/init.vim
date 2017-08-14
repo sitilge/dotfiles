@@ -147,15 +147,21 @@ let g:deoplete#enable_at_startup=1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " Initial gitgutter config
-" Refresh every 1000ms
-set updatetime=1000
+" Refresh every 10000ms
+set updatetime=10000
 
 " Enable autosave
 let g:auto_save=1
 let g:auto_save_silent=1
 let g:auto_save_write_all_buffers=1
-let g:auto_updatetime=1000
+let g:auto_updatetime=10000
 
 " Enable basic formating when filetype not found
 let g:neoformat_basic_format_align=1
 let g:neoformat_basic_format_trim=1
+
+" Run Neoformat on save
+augroup fmt
+	autocmd!
+	autocmd BufWritePre * undojoin | Neoformat
+augroup END
