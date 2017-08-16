@@ -5,6 +5,9 @@ PS1='[\u@\h \W]\$ '
 export EDITOR=nvim
 export VISUAL=nvim
 
+# enable vi key bindings
+set -o vi
+
 # history variables
 export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=100000
