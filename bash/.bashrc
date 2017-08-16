@@ -16,6 +16,9 @@ export HISTFILESIZE=$HISTSIZE
 # include dotfiles in filename expansion
 shopt -s dotglob
 
+# enable ** usage in filename expansion
+shopt -s globstar
+
 # update window size
 shopt -s checkwinsize
 

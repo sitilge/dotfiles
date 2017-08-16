@@ -118,6 +118,9 @@ let g:airline_theme='solarized'
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
+" Show hidden files
+let NERDTreeShowHidden=1
+
 " Extra column for syntastic and git-gutter
 hi clear SignColumn
 
