@@ -118,6 +118,9 @@ let g:airline_theme='solarized'
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
+" Show hidden files
+let NERDTreeShowHidden=1
+
 " Extra column for syntastic and git-gutter
 hi clear SignColumn
 
@@ -147,21 +150,17 @@ let g:deoplete#enable_at_startup=1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " Initial gitgutter config
-" Refresh every 10000ms
-set updatetime=10000
+set updatetime=1000
 
 " Enable autosave
 let g:auto_save=1
 let g:auto_save_silent=1
 let g:auto_save_write_all_buffers=1
-let g:auto_updatetime=10000
+let g:auto_updatetime=1000
+
+" Run Neoformat after each save
+let g:auto_save_postsave_hook='Neoformat'
 
 " Enable basic formating when filetype not found
 let g:neoformat_basic_format_align=1
 let g:neoformat_basic_format_trim=1
-
-" Run Neoformat on save
-augroup fmt
-	autocmd!
-	autocmd BufWritePre * undojoin | Neoformat
-augroup END

@@ -5,6 +5,9 @@ PS1='[\u@\h \W]\$ '
 export EDITOR=nvim
 export VISUAL=nvim
 
+# enable vi key bindings
+set -o vi
+
 # history variables
 export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=100000
@@ -12,6 +15,9 @@ export HISTFILESIZE=$HISTSIZE
 
 # include dotfiles in filename expansion
 shopt -s dotglob
+
+# enable ** usage in filename expansion
+shopt -s globstar
 
 # update window size
 shopt -s checkwinsize
