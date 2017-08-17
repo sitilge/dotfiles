@@ -114,9 +114,10 @@ let g:airline_powerline_fonts=1
 " Set airline theme
 let g:airline_theme='solarized'
 
-" Open NERDTree automatically if dir selected
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" Start NERDTreeTabs on GUI if dir selected
+let g:nerdtree_tabs_open_on_console_startup=2
+let g:nerdtree_tabs_smart_startup_focus=2
+let g:nerdtree_tabs_focus_on_files=1
 
 " Show hidden files
 let NERDTreeShowHidden=1
