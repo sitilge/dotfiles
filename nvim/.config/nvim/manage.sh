@@ -9,7 +9,7 @@ repos=(
 'https://github.com/vim-syntastic/syntastic.git'
 'https://github.com/vim-airline/vim-airline.git'
 'https://github.com/vim-airline/vim-airline-themes.git'
-'https://github.com/altercation/vim-colors-solarized.git'
+'https://github.com/ericbn/vim-solarized.git'
 'https://github.com/airblade/vim-gitgutter.git'
 'https://github.com/Raimondi/delimitMate.git'
 'https://github.com/ntpeters/vim-better-whitespace.git'
@@ -19,6 +19,10 @@ repos=(
 'https://github.com/sbdchd/neoformat'
 'https://github.com/brooth/far.vim'
 'https://github.com/tpope/vim-fugitive.git'
+'https://github.com/universal-ctags/ctags.git'
+'https://github.com/xolox/vim-misc.git'
+'https://github.com/xolox/vim-easytags.git'
+'https://github.com/majutsushi/tagbar.git'
 )
 
 dir=~/.config/nvim

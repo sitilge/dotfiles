@@ -4,6 +4,9 @@ filetype plugin indent on
 " Enable syntax highlight
 syntax enable
 
+" Enable true-color support
+set termguicolors
+
 " Set autoindent
 set autoindent
 
