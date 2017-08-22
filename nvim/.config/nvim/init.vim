@@ -59,11 +59,11 @@ set hlsearch
 " Always use the clipboard for all operations
 set clipboard=unnamed,unnamedplus
 
-" Show existing tab with 4 spaces width
-set tabstop=4
+" Show existing tab with 8 spaces width
+set tabstop=8
 
-" When indenting with '>', use 4 spaces width
-set shiftwidth=4
+" When indenting with '>', use 8 spaces width
+set shiftwidth=8
 
 " Set the background
 set background=dark
@@ -161,9 +161,6 @@ let g:auto_save=1
 let g:auto_save_silent=1
 let g:auto_save_write_all_buffers=1
 let g:auto_updatetime=1000
-
-" Run Neoformat after each save
-let g:auto_save_postsave_hook='Neoformat'
 
 " Enable basic formating when filetype not found
 let g:neoformat_basic_format_align=1
