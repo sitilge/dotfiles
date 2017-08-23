@@ -6,25 +6,25 @@ repos=(
 'https://github.com/scrooloose/nerdcommenter.git'
 'https://github.com/jistr/vim-nerdtree-tabs.git'
 'https://github.com/xuyuanp/nerdtree-git-plugin.git'
+'https://github.com/tpope/vim-fugitive.git'
 'https://github.com/vim-syntastic/syntastic.git'
 'https://github.com/vim-airline/vim-airline.git'
 'https://github.com/vim-airline/vim-airline-themes.git'
 'https://github.com/ericbn/vim-solarized.git'
 'https://github.com/airblade/vim-gitgutter.git'
-'https://github.com/Raimondi/delimitMate.git'
 'https://github.com/ntpeters/vim-better-whitespace.git'
 'https://github.com/ryanoasis/vim-devicons.git'
 'https://github.com/Shougo/deoplete.nvim.git'
 'https://github.com/vim-scripts/vim-auto-save.git'
 'https://github.com/sbdchd/neoformat'
 'https://github.com/brooth/far.vim'
-'https://github.com/tpope/vim-fugitive.git'
 'https://github.com/universal-ctags/ctags.git'
 'https://github.com/xolox/vim-misc.git'
 'https://github.com/xolox/vim-easytags.git'
 'https://github.com/majutsushi/tagbar.git'
 )
 
+# The config directory
 dir=~/.config/nvim
 
 # No config below this line
