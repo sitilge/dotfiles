@@ -28,10 +28,6 @@ set autoread
 " Highlight line under cursor
 set cursorline
 
-" Enable folding
-set foldmethod=indent
-set foldlevel=1
-
 " Enable lazyredraw
 set lazyredraw
 
