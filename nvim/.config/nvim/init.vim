@@ -31,6 +31,10 @@ set cursorline
 " Enable lazyredraw
 set lazyredraw
 
+" Enable passive folding
+set foldmethod=indent
+set nofoldenable
+
 " Fix 8 lines above the cursor
 set scrolloff=8
 
