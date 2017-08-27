@@ -1,14 +1,12 @@
 # set the PS1
 PS1='[\u@\h \W]\$ '
 
-# set both the editor and visual env variables
-export EDITOR=nvim
-export VISUAL=nvim
-
 # enable vi key bindings
 set -o vi
 
-# history variables
+# set variables
+export EDITOR=nvim
+export VISUAL=nvim
 export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=100000
 export HISTFILESIZE=$HISTSIZE
