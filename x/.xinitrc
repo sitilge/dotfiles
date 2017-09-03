@@ -2,10 +2,10 @@
 
 # remove all sessions
 if [ -d ~/.cache/sessions ]; then
-    rm -R ~/.cache/sessions/*
+	rm ~/.cache/sessions/* && chmod 500 ~/.cache/sessions
 fi
 
-# set keymap for x11 only
+# set keymap
 setxkbmap lv
 
 # initialize conky
