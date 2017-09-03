@@ -60,7 +60,7 @@ if [ "$TERM" = "linux" ]; then
 	clear # against bg artifacts
 fi
 
-" start the ssh-agent
+# start the ssh-agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent > ~/.ssh-agent-thing
 fi
