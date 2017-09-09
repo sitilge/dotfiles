@@ -6,6 +6,7 @@ Dotfiles for
 - X
 - nvim
 - xfce4
+- ranger
 - conky
 
 # Install
