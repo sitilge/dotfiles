@@ -25,11 +25,18 @@ set encoding=utf-8
 " Reload unchanged files automatically
 set autoread
 
+" Enable persistent undo
+set undodir=~/.vimundo/
+set undofile
+
 " Highlight line under cursor
 set cursorline
 
 " Enable lazyredraw
 set lazyredraw
+
+" Enable mouse for navigation (don'y yell at me)
+set mouse=a
 
 " Enable passive folding
 set foldmethod=indent
@@ -80,8 +87,6 @@ nmap <silent> <A-l> :wincmd l<CR>
 nmap <silent> <A-;> gT
 nmap <silent> <A-'> gt
 
-" Enable mouse for navigation (don'y yell at me)
-set mouse=a
 
 " Disable Arrow keys in Escape mode
 map <up> <nop>

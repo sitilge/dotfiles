@@ -23,6 +23,7 @@ repos=(
 'https://github.com/xolox/vim-easytags.git'
 'https://github.com/majutsushi/tagbar.git'
 'https://github.com/whatyouhide/vim-lengthmatters.git'
+'https://github.com/mbbill/undotree.git'
 )
 
 # The config directory
