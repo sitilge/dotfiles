@@ -24,6 +24,7 @@ repos=(
 'https://github.com/tpope/vim-repeat.git'
 'https://github.com/tpope/vim-commentary.git'
 'https://github.com/tpope/vim-fugitive.git'
+'https://github.com/brooth/far.vim.git'
 )
 
 # The config directory
