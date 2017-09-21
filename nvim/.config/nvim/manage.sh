@@ -3,10 +3,8 @@
 # The plugin repos
 repos=(
 'https://github.com/scrooloose/nerdtree.git'
-'https://github.com/scrooloose/nerdcommenter.git'
 'https://github.com/jistr/vim-nerdtree-tabs.git'
 'https://github.com/xuyuanp/nerdtree-git-plugin.git'
-'https://github.com/tpope/vim-fugitive.git'
 'https://github.com/vim-syntastic/syntastic.git'
 'https://github.com/vim-airline/vim-airline.git'
 'https://github.com/vim-airline/vim-airline-themes.git'
@@ -17,13 +15,15 @@ repos=(
 'https://github.com/Shougo/deoplete.nvim.git'
 'https://github.com/vim-scripts/vim-auto-save.git'
 'https://github.com/sbdchd/neoformat'
-'https://github.com/brooth/far.vim'
 'https://github.com/universal-ctags/ctags.git'
 'https://github.com/xolox/vim-misc.git'
 'https://github.com/xolox/vim-easytags.git'
 'https://github.com/majutsushi/tagbar.git'
 'https://github.com/whatyouhide/vim-lengthmatters.git'
 'https://github.com/mbbill/undotree.git'
+'https://github.com/tpope/vim-repeat.git'
+'https://github.com/tpope/vim-commentary.git'
+'https://github.com/tpope/vim-fugitive.git'
 )
 
 # The config directory
