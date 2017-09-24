@@ -2,6 +2,9 @@
 # ~/.bash_profile
 #
 
+# source the .bashrc
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
 # start the ssh-agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
 	ssh-agent > ~/.ssh-agent-thing
@@ -14,6 +17,3 @@ fi
 if ! ssh-add -l > /dev/null; then
 	ssh-add -k
 fi
-
-# source the .bashrc
-[[ -f ~/.bashrc ]] && . ~/.bashrc
