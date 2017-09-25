@@ -11,6 +11,9 @@ export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=100000
 export HISTFILESIZE=$HISTSIZE
 
+# append to history
+shopt -s histappend
+
 # include dotfiles in filename expansion
 shopt -s dotglob
 
