@@ -87,7 +87,6 @@ nmap <silent> <A-l> :wincmd l<CR>
 nmap <silent> <A-;> gT
 nmap <silent> <A-'> gt
 
-
 " Disable Arrow keys in Escape mode
 map <up> <nop>
 map <down> <nop>
