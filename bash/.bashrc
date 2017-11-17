@@ -7,6 +7,8 @@ set -o vi
 # set variables
 export EDITOR=nvim
 export VISUAL=nvim
+export BROWSER=firefox
+export TERMINAL=termite
 export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=100000
 export HISTFILESIZE=$HISTSIZE
@@ -39,8 +41,9 @@ alias rm="rm -vf"
 alias cp="cp -v"
 alias mkdir="mkdir -p"
 
+alias ls="ls --color=auto"
 alias l="ls --color=auto"
-alias ll="ls --color=auto -lah"
+alias ll="l --color=auto -lah"
 
 # set solarized colors for tty
 if [ "$TERM" = "linux" ]; then
