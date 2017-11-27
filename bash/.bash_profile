@@ -18,5 +18,5 @@ if ! ssh-add -l > /dev/null; then
 	ssh-add -k
 fi
 
-# start the x
-startx
+# start the xorg
+exec startx

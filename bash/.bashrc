@@ -8,7 +8,6 @@ set -o vi
 export EDITOR=nvim
 export VISUAL=nvim
 export BROWSER=firefox
-export TERMINAL=termite
 export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=100000
 export HISTFILESIZE=$HISTSIZE
