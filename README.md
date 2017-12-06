@@ -1,15 +1,6 @@
 # Dotfiles
 
-Dotfiles for
-
-- bash
-- curl
-- git
-- X
-- nvim
-- xfce4
-- ranger
-- conky
+An array of dotfiles.
 
 # Install
 
