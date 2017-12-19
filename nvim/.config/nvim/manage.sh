@@ -13,7 +13,7 @@ repos=(
 'https://github.com/ntpeters/vim-better-whitespace.git'
 'https://github.com/ryanoasis/vim-devicons.git'
 'https://github.com/Shougo/deoplete.nvim.git'
-'https://github.com/vim-scripts/vim-auto-save.git'
+'https://github.com/907th/vim-auto-save.git'
 'https://github.com/sbdchd/neoformat'
 # 'https://github.com/universal-ctags/ctags.git'
 # 'https://github.com/xolox/vim-misc.git'
