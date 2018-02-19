@@ -1,0 +1,3 @@
+[submodule "lain"]
+	path = awesome/lain
+	url = git://github.com/lcpz/lain.git
