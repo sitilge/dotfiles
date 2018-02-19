@@ -69,7 +69,6 @@ plugins=(
 )
 
 # User configuration
-
 export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -78,7 +77,7 @@ export LANG=en_US.UTF-8
 # Personal preferences
 export EDITOR=nvim
 export VISUAL=nvim
-export BROWSER=firefox
+export BROWSER=qutebrowser
 export TERM=linux
 
 # Solarized colors for tty
@@ -104,7 +103,7 @@ fi
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
-  mkdir $ZSH_CACHE_DIR
+	mkdir $ZSH_CACHE_DIR
 fi
 
 source $ZSH/oh-my-zsh.sh

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # set keymap
-setxkbmap lv
+setxkbmap lv &&
 
 # start awesome
 exec awesome
