@@ -111,6 +111,9 @@ vmap <right> <nop>
 " Force saving files that require root permission
 cnoremap w!! w !sudo tee > /dev/null %
 
+" Set a custom runtime path for pathogen
+set rtp^=~/.config/nvim/autoload/
+
 " Start pathogen plugin manager
 execute pathogen#infect()
 call pathogen#helptags()
