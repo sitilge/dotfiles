@@ -70,3 +70,9 @@
 ; [submodule "nvim/.config/nvim/bundle/tagbar"]
 ; 	path = nvim/.config/nvim/bundle/tagbar
 ; 	url = https://github.com/majutsushi/tagbar.git
+[submodule "nvim/.config/nvim/vim-pathogen"]
+	path = nvim/.config/nvim/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "nvim/.config/asd"]
+	path = nvim/.config/asd
+	url = https://github.com/tpope/vim-pathogen.git
