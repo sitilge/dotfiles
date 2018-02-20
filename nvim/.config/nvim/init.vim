@@ -10,6 +10,9 @@ set termguicolors
 " Set autoindent
 set autoindent
 
+" Set smartindent
+set smartindent
+
 " Always show window status
 set laststatus=2
 
