@@ -1,3 +1,6 @@
+[submodule "nvim/.config/nvim/autoload"]
+	path = nvim/.config/nvim/autoload
+	url = https://github.com/tpope/vim-pathogen.git
 [submodule "nvim/.config/nvim/bundle/nerdtree"]
 	path = nvim/.config/nvim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -55,3 +58,15 @@
 [submodule "nvim/.config/nvim/bundle/far.vim"]
 	path = nvim/.config/nvim/bundle/far.vim
 	url = https://github.com/brooth/far.vim.git
+; [submodule "nvim/.config/nvim/bundle/ctags"]
+; 	path = nvim/.config/nvim/bundle/ctags
+; 	url = https://github.com/universal-ctags/ctags.git
+; [submodule "nvim/.config/nvim/bundle/vim-misc"]
+; 	path = nvim/.config/nvim/bundle/vim-misc
+; 	url = https://github.com/xolox/vim-misc.git
+; [submodule "nvim/.config/nvim/bundle/vim-easytags"]
+; 	path = nvim/.config/nvim/bundle/vim-easytags
+; 	url = https://github.com/xolox/vim-easytags.git
+; [submodule "nvim/.config/nvim/bundle/tagbar"]
+; 	path = nvim/.config/nvim/bundle/tagbar
+; 	url = https://github.com/majutsushi/tagbar.git
