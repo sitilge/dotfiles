@@ -58,8 +58,11 @@ do
 
 			for repo in "${repos[@]}"
 			do
-				git clone --depth=1 "${repo}"
+				git submodule add "${repo}"
 			done
+
+			# Call nvim command to update the plugins
+			nvim +UpdateRemotePlugins +qall
 
 			exit
 			;;
@@ -70,6 +73,9 @@ do
 			do
 				git pull
 			done
+
+			# Call nvim command to update the plugins
+			nvim +UpdateRemotePlugins +qall
 
 			exit
 			;;
@@ -92,6 +98,9 @@ do
 					rm -rf "${d}"
 				fi
 			done
+
+			# Call nvim command to update the plugins
+			nvim +UpdateRemotePlugins +qall
 
 			exit
 			;;
