@@ -77,7 +77,7 @@ export LANG=en_US.UTF-8
 # Personal preferences
 export EDITOR=nvim
 export VISUAL=nvim
-export BROWSER=qutebrowser
+export BROWSER=firefox
 export TERM=linux
 
 # Solarized colors for tty
