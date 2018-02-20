@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # The plugin repos
 repos=(
