@@ -34,14 +34,10 @@ filter_unmatched_urls = true
 # Solarized dark color scheme
 
 [colors]
+background = rgba(0, 43, 54, 0.8)
 foreground = #839496
 foreground_bold = #eee8d5
-#foreground_dim = #888888
-background = #002b36
 cursor = #93a1a1
-
-# if unset, will reverse foreground and background
-#highlight = #839496
 
 # colors from color0 to color254 can be set
 color0 = #073642
@@ -60,16 +56,3 @@ color12 = #839496
 color13 = #6c71c4
 color14 = #93a1a1
 color15 = #fdf6e3
-
-[hints]
-#font = Monospace 12
-#foreground = #dcdccc
-#background = #3f3f3f
-#active_foreground = #e68080
-#active_background = #3f3f3f
-#padding = 2
-#border = #3f3f3f
-#border_width = 0.5
-#roundness = 2.0
-
-# vim: ft=dosini cms=#%s
