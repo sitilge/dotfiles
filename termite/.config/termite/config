@@ -34,6 +34,8 @@ filter_unmatched_urls = true
 # Solarized dark color scheme
 
 [colors]
+# Replaced the hex value with rgba for transparency
+# The hex value for background was #002b36
 background = rgba(0, 43, 54, 0.8)
 foreground = #839496
 foreground_bold = #eee8d5

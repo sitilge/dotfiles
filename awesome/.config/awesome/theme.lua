@@ -6,7 +6,7 @@ local theme = {}
 
 theme.font          = "Inconsolata Nerd Font Mono 10"
 
-theme.bg_normal     = "#222222"
+theme.bg_normal     = "#002b3680"
 theme.bg_focus      = "#535d6c"
 theme.bg_urgent     = "#ff0000"
 theme.bg_minimize   = "#444444"
