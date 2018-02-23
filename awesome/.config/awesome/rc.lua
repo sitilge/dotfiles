@@ -298,8 +298,12 @@ awful.rules.rules = {
       }, properties = { titlebars_enabled = false }
     },
 
-    -- Suppress Firefox floating behavior
+    -- Suppress floating behavior
     { rule = { class = "Firefox" },
+      properties = { opacity = 1, maximized = false, floating = false }
+    },
+
+    { rule = { class = "Thunderbird" },
       properties = { opacity = 1, maximized = false, floating = false }
     }
 }
