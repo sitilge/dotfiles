@@ -160,20 +160,27 @@ autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_c_con
 autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_avrgcc_config', expand('<afile>:p:h', 1)) != '' ? ['avrgcc'] : ['']
 
 " Enable deoplete on startup
-let g:deoplete#enable_at_startup=1
+let g:deoplete#enable_at_startup=0
+autocmd InsertEnter * call deoplete#enable()
 
 " Deoplete tab-complete
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
+function! OnTermClose()
+	if len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
+		:quit!
+	else
+		call feedkeys(" ")
+	endif
+endfunction
+
+au TermClose * nested call OnTermClose()
+
+" Initial shit
 " Initial gitgutter config
 set updatetime=1000
 
-" Enable autosave
-let g:auto_save=1
-let g:auto_save_silent=1
-let g:auto_save_write_all_buffers=1
-let g:auto_updatetime=10000
-
+" Enable endif
 " Enable basic formating when filetype not found
 let g:neoformat_basic_format_align=1
 let g:neoformat_basic_format_trim=1

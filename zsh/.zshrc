@@ -101,6 +101,12 @@ if [ "$TERM" = "linux" ]; then
 	clear # against bg artifacts
 fi
 
+# Aliases
+alias rm="rm -vi"
+alias mv="mv -vi"
+alias mkdir="mkdir -p"
+alias ssh="ssh-ident"
+
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
 	mkdir $ZSH_CACHE_DIR

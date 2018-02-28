@@ -34,9 +34,6 @@
 [submodule "nvim/.config/nvim/bundle/deoplete.nvim"]
 	path = nvim/.config/nvim/bundle/deoplete.nvim
 	url = https://github.com/Shougo/deoplete.nvim.git
-[submodule "nvim/.config/nvim/bundle/vim-auto-save"]
-	path = nvim/.config/nvim/bundle/vim-auto-save
-	url = https://github.com/907th/vim-auto-save.git
 [submodule "nvim/.config/nvim/bundle/neoformat"]
 	path = nvim/.config/nvim/bundle/neoformat
 	url = https://github.com/sbdchd/neoformat
@@ -55,9 +52,6 @@
 [submodule "nvim/.config/nvim/bundle/vim-fugitive"]
 	path = nvim/.config/nvim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "nvim/.config/nvim/bundle/far.vim"]
-	path = nvim/.config/nvim/bundle/far.vim
-	url = https://github.com/brooth/far.vim.git
 ; [submodule "nvim/.config/nvim/bundle/ctags"]
 ; 	path = nvim/.config/nvim/bundle/ctags
 ; 	url = https://github.com/universal-ctags/ctags.git
