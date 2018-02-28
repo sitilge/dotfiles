@@ -105,7 +105,9 @@ fi
 alias rm="rm -vi"
 alias mv="mv -vi"
 alias mkdir="mkdir -p"
-alias ssh="ssh-ident"
+
+# SSH key management
+eval $(keychain --eval --quiet)
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
