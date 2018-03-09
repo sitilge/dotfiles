@@ -37,9 +37,6 @@
 [submodule "nvim/.config/nvim/bundle/neoformat"]
 	path = nvim/.config/nvim/bundle/neoformat
 	url = https://github.com/sbdchd/neoformat
-[submodule "nvim/.config/nvim/bundle/vim-lengthmatters"]
-	path = nvim/.config/nvim/bundle/vim-lengthmatters
-	url = https://github.com/whatyouhide/vim-lengthmatters.git
 [submodule "nvim/.config/nvim/bundle/undotree"]
 	path = nvim/.config/nvim/bundle/undotree
 	url = https://github.com/mbbill/undotree.git
