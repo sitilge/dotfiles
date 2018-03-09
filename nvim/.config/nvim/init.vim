@@ -182,6 +182,3 @@ set updatetime=1000
 " Enable basic formating when filetype not found
 let g:neoformat_basic_format_align=1
 let g:neoformat_basic_format_trim=1
-
-" Show lengthy lines in readonly files
-let g:lengthmatters_exclude_readonly=0
