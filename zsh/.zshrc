@@ -102,8 +102,8 @@ if [ "$TERM" = "linux" ]; then
 fi
 
 # Aliases
-alias rm="rm -vi"
-alias mv="mv -vi"
+alias rm="rm -vI"
+alias mv="mv -vip"
 alias mkdir="mkdir -p"
 
 # SSH key management
