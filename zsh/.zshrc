@@ -103,8 +103,9 @@ fi
 
 # Aliases
 alias rm="rm -vI"
-alias mv="mv -vip"
-alias mkdir="mkdir -p"
+alias mv="mv -vi"
+alias cp="cp -vip"
+alias mkdir="mkdir -vp"
 
 # SSH key management
 eval $(keychain --eval --quiet)
