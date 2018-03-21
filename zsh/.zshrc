@@ -102,9 +102,10 @@ if [ "$TERM" = "linux" ]; then
 fi
 
 # Aliases
-alias rm="rm -vi"
+alias rm="rm -vI"
 alias mv="mv -vi"
-alias mkdir="mkdir -p"
+alias cp="cp -vip"
+alias mkdir="mkdir -vp"
 
 # SSH key management
 eval $(keychain --eval --quiet)
