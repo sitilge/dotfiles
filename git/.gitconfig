@@ -1,2 +1,5 @@
 [core]
 	fileMode = false
+[user]
+	email = martins@sitilge.id.lv
+	name = Martins Eglitis
