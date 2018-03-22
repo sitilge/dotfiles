@@ -61,3 +61,6 @@
 ; [submodule "nvim/.config/nvim/bundle/tagbar"]
 ; 	path = nvim/.config/nvim/bundle/tagbar
 ; 	url = https://github.com/majutsushi/tagbar.git
+[submodule "nvim/.config/nvim/bundle/vim-autoformat"]
+	path = nvim/.config/nvim/bundle/vim-autoformat
+	url = https://github.com/Chiel92/vim-autoformat.git
