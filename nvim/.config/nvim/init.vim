@@ -166,19 +166,5 @@ autocmd InsertEnter * call deoplete#enable()
 " Deoplete tab-complete
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
-function! OnTermClose()
-	if len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
-		:quit!
-	else
-		call feedkeys(" ")
-	endif
-endfunction
-
-au TermClose * nested call OnTermClose()
-
 " Initial gitgutter config
 set updatetime=1000
-
-" Enable basic formating when filetype not found
-let g:neoformat_basic_format_align=1
-let g:neoformat_basic_format_trim=1
