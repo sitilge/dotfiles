@@ -160,7 +160,6 @@ autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_c_con
 autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_avrgcc_config', expand('<afile>:p:h', 1)) != '' ? ['avrgcc'] : ['']
 
 " Enable deoplete on startup
-let g:deoplete#enable_at_startup=0
 autocmd InsertEnter * call deoplete#enable()
 
 " Deoplete tab-complete
