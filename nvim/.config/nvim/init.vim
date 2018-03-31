@@ -38,7 +38,7 @@ set cursorline
 " Enable lazyredraw
 set lazyredraw
 
-" Enable mouse for navigation (don'y yell at me)
+" Enable mouse for navigation (don't yell at me)
 set mouse=a
 
 " Enable passive folding
@@ -69,9 +69,6 @@ set showcmd
 
 " Highlight search results
 set hlsearch
-
-" Always use the clipboard for all operations
-set clipboard=unnamed,unnamedplus
 
 " Show existing tab with 8 spaces width
 set tabstop=8
@@ -159,7 +156,7 @@ endfunction
 autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_c_config', expand('<afile>:p:h', 1)) != '' ? ['gcc'] : ['']
 autocmd FileType c let b:syntastic_checkers = FindConfig('-c', '.syntastic_avrgcc_config', expand('<afile>:p:h', 1)) != '' ? ['avrgcc'] : ['']
 
-" Enable deoplete on startup
+" Enable deoplete on insert
 autocmd InsertEnter * call deoplete#enable()
 
 " Deoplete tab-complete
