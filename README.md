@@ -1,10 +1,6 @@
 # Dotfiles
 
-An array of dotfiles.
-
-# Install
-
-Clone the repo and the submodules
+Clone the repo (use `--recursive` to download the submodules)
 
 ````
 git clone --recursive https://github.com/sitilge/dotfiles
