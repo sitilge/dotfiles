@@ -61,3 +61,6 @@
 [submodule "nvim/.config/nvim/bundle/vim-autoformat"]
 	path = nvim/.config/nvim/bundle/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
+[submodule "nvim/.config/nvim/bundle/vim-dadbod"]
+	path = nvim/.config/nvim/bundle/vim-dadbod
+	url = https://github.com/tpope/vim-dadbod.git
