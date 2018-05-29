@@ -19,3 +19,4 @@ cd ~/Projects/dotfiles && stow -t ~ nvim
 - There is no need to install any extra fonts for powerline, nvim, etc.
 - Edit the `.gitmodules` to cherry-pick repos you use.
 - Run `nvim +UpdateRemotePlugins +qall` from the command line after updating nvim plugins or run `:UpdateRemotePlugins` from within nvim.
+- To update all submodules run `git submodule update --remote --merge`
