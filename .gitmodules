@@ -1,66 +1,88 @@
 [submodule "nvim/.config/nvim/autoload"]
 	path = nvim/.config/nvim/autoload
 	url = https://github.com/tpope/vim-pathogen.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/nerdtree"]
 	path = nvim/.config/nvim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/vim-nerdtree-tabs"]
 	path = nvim/.config/nvim/bundle/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/nerdtree-git-plugin"]
 	path = nvim/.config/nvim/bundle/nerdtree-git-plugin
 	url = https://github.com/xuyuanp/nerdtree-git-plugin.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/syntastic"]
 	path = nvim/.config/nvim/bundle/syntastic
 	url = https://github.com/vim-syntastic/syntastic.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/vim-airline"]
 	path = nvim/.config/nvim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/vim-airline-themes"]
 	path = nvim/.config/nvim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/vim-solarized"]
 	path = nvim/.config/nvim/bundle/vim-solarized
 	url = https://github.com/ericbn/vim-solarized.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/vim-gitgutter"]
 	path = nvim/.config/nvim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/vim-better-whitespace"]
 	path = nvim/.config/nvim/bundle/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/vim-devicons"]
 	path = nvim/.config/nvim/bundle/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/deoplete.nvim"]
 	path = nvim/.config/nvim/bundle/deoplete.nvim
 	url = https://github.com/Shougo/deoplete.nvim.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/undotree"]
 	path = nvim/.config/nvim/bundle/undotree
 	url = https://github.com/mbbill/undotree.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/vim-repeat"]
 	path = nvim/.config/nvim/bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/vim-commentary"]
 	path = nvim/.config/nvim/bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/vim-fugitive"]
 	path = nvim/.config/nvim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+	ignore = all
 ; [submodule "nvim/.config/nvim/bundle/ctags"]
 ; 	path = nvim/.config/nvim/bundle/ctags
 ; 	url = https://github.com/universal-ctags/ctags.git
+;	ignore = all
 ; [submodule "nvim/.config/nvim/bundle/vim-misc"]
 ; 	path = nvim/.config/nvim/bundle/vim-misc
 ; 	url = https://github.com/xolox/vim-misc.git
+; 	ignore = all
 ; [submodule "nvim/.config/nvim/bundle/vim-easytags"]
 ; 	path = nvim/.config/nvim/bundle/vim-easytags
 ; 	url = https://github.com/xolox/vim-easytags.git
+;	ignore = all
 ; [submodule "nvim/.config/nvim/bundle/tagbar"]
 ; 	path = nvim/.config/nvim/bundle/tagbar
 ; 	url = https://github.com/majutsushi/tagbar.git
+; 	ignore = all
 [submodule "nvim/.config/nvim/bundle/vim-autoformat"]
 	path = nvim/.config/nvim/bundle/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
+	ignore = all
 [submodule "nvim/.config/nvim/bundle/vim-dadbod"]
 	path = nvim/.config/nvim/bundle/vim-dadbod
 	url = https://github.com/tpope/vim-dadbod.git
+	ignore = all
