@@ -86,3 +86,6 @@
 	path = nvim/.config/nvim/bundle/vim-dadbod
 	url = https://github.com/tpope/vim-dadbod.git
 	ignore = all
+[submodule "nvim/.config/nvim/bundle/far.vim"]
+	path = nvim/.config/nvim/bundle/far.vim
+	url = https://github.com/brooth/far.vim.git
